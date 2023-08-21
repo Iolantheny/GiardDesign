@@ -1,0 +1,139 @@
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 120px 0px 44px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 96px;
+  background: var(--beige);
+}
+
+.projects__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 160px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 16px;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+  font-family: Inter;
+  color: var(--black);
+}
+
+.projects__text h2 {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.12px;
+}
+
+.projects__text h3 {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 115%;
+  letter-spacing: -1.44px;
+}
+
+.projects__text h3 span {
+  font-family: Inter;
+  font-style: italic;
+}
+
+#macy-container {
+  text-align: center;
+}
+
+.projects__photos {
+  width: 100%;
+  max-height: 1475px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.item {
+  width: 452px;
+}
+
+.projects__photos--gradient {
+  height: 1000px;
+  width: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#dcc1ab),
+    to(rgba(214, 183, 158, 0))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    #dcc1ab 0%,
+    rgba(214, 183, 158, 0) 100%
+  );
+  background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.projects__photos button {
+  display: inline-flex;
+  padding: 12px 22px 14px 22px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 200px;
+  border: 1px solid var(--black);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  z-index: 10;
+  position: absolute;
+  left: 45%;
+  bottom: 45px;
+}
+
+.projects__photos button img {
+  width: 16px;
+  height: 16px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.visible {
+  max-height: unset;
+}
+
+.none {
+  display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects__text {
+    padding-left: 8%;
+  }
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 30px;
+  width: 30px;
+  background-color: var(--green);
+}

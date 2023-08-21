@@ -1,0 +1,228 @@
+.slider {
+  width: 100vw;
+  position: relative;
+}
+
+.slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  -o-transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 64px;
+  background-color: var(--beige);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--black);
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0 !important;
+}
+
+.slide__green {
+  background-color: var(--green) !important;
+  color: var(--white) !important;
+  text-align: right !important;
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+.slide__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 72px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  flex-basis: 45%;
+}
+
+.slide__content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 44px;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+}
+
+.slide__content-text h1 {
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.slide__content-text p {
+  width: 489.013px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.slide__content-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.slide__content-btns button:first-child {
+  padding: 12px 24px 14px;
+  border-radius: 200px;
+  background: var(--green);
+  color: var(--white);
+}
+
+.slide__content-btns button:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px 24px 14px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 200px;
+  border: 1px solid var(--green);
+  color: var(--green);
+  text-align: center;
+}
+
+.slide__content-btns button:last-child img {
+  width: 16px;
+  height: 16px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-filter: invert(26%) sepia(14%) saturate(2407%) hue-rotate(88deg)
+    brightness(94%) contrast(84%);
+  filter: invert(26%) sepia(14%) saturate(2407%) hue-rotate(88deg)
+    brightness(94%) contrast(84%);
+}
+
+.slider-btns {
+  position: absolute;
+  background-color: var(--lightYellow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 32px;
+  gap: 32px;
+  bottom: 0;
+  right: 0;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.slide__content-img {
+  height: 100vh;
+  flex-basis: 45%;
+}
+
+.slide__content-img img {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1025px) {
+  .slide__green {
+    padding-right: 4% !important;
+  }
+
+  .slide__content-text {
+    padding-left: 10%;
+  }
+
+  .slide__content-text h1 {
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+
+  .slide__content-text p {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .slide__content {
+    gap: 50px;
+  }
+
+  .slide__content-text h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slide {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 20% 0 0 !important;
+  }
+
+  .slide__content-text {
+    padding: 2%;
+    width: 100vw;
+  }
+
+  .slide__content-text h1 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .slide__content-btns {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .slide__content-img {
+    flex-basis: 100%;
+  }
+
+  .slide__green {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}

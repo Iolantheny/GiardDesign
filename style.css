@@ -1,0 +1,88 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --white: #fff;
+  --lightYellow: #f5f0ec;
+  --beige: #dcc1ab;
+  --green: #1b5b31;
+  --darkGrey: #333;
+  --black: #111;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#app {
+  overflow-x: hidden;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.white {
+  color: var(--white);
+}
+
+.white:hover {
+  color: var(--white);
+}
+
+.green {
+  color: var(--green);
+}
+
+.green:hover {
+  color: var(--green);
+}
+
+.p-6 {
+  padding: 6%;
+}
+
+.link {
+  padding: 18%;
+  color: var(--black);
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in-out,
+    -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: inset 200px 0 0 0 var(--green);
+}
