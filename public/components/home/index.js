@@ -6,28 +6,28 @@ import garden from "./../../assets/images/garden.jpg";
 export function home(home) {
   home.innerHTML = `
   <div class="slider container">
-  <div class="slides row">
-    <div class="slide col-md-6 d-flex">
-      <div class="slide__content d-flex">
-        <div class="slide__content-text">
-          <h1>Nowoczesna<br/> aranżacja <br/>Twojego ogrodu</h1>
-          <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług
-            z indywidualnym podejściem do każdego projektu.</p>
-              <div class="slide__content-btns">
-                <button type="button" class="btn"><a href="#insta" class="btn-link white">Skontaktuj się z nami</a></button>
-                <button type="button" class="btn">
-                  <a href="#projects" class="btn-link green">
-                    Zobacz nasze realizacje
-                    <img src=${arrow} alt="arrow" />
-                  </a>
-                </button>
-              </div>
+    <div class="slides row">
+      <div class="slide col-md-6 d-flex">
+        <div class="slide__content d-flex">
+          <div class="slide__content-text">
+            <h1>Nowoczesna<br/> aranżacja <br/>Twojego ogrodu</h1>
+            <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług
+              z indywidualnym podejściem do każdego projektu.</p>
+            <div class="slide__content-btns">
+              <button type="button" class="btn"><a href="#insta" class="btn-link white">Skontaktuj się z nami</a></button>
+              <button type="button" class="btn">
+                <a href="#projects" class="btn-link green">
+                  Zobacz nasze realizacje
+                  <img src=${arrow} alt="arrow" />
+                </a>
+              </button>
+            </div>
+            </div>
+          </div>
+          <div class="slide__content-img">
+            <img src=${homeImg} alt="Obraz 1" />
           </div>
       </div>
-      <div class="slide__content-img">
-        <img src=${homeImg} alt="Obraz 1" />
-      </div>
-    </div>
     <div class="slide col-md-6 slide__green d-flex">
       <div class="slide__content-img">
         <img src=${garden} alt="Obraz 2"  />

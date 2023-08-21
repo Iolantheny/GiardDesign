@@ -1,9 +1,11 @@
 .slider {
   width: 100vw;
   position: relative;
+  margin: 0 !important;
 }
 
 .slides {
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
